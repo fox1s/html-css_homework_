@@ -1,8 +1,8 @@
 body {
-    margin-right: 75px;
-    margin-left: 75px;
+    margin-right: 100px;
+    margin-left: 100px;
 }
-
+/*-------------------заголовок-------------------*/
 #title {
     display: block;
     position: fixed;
@@ -32,6 +32,31 @@ body {
     color: white;
 }
 
+
+
+/*********кнопка увійти*************/
+.button_singUp {
+    display: inline-block;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .5em 2em;
+    outline: none;
+    border: 2px solid;
+    border-radius: 1px;
+    transition: 0.2s;
+    float: right;
+    margin-right: 60px;
+}
+.button_singUp:hover { background: rgba(255,255,255,.2); text-decoration: none}
+.button_singUp:active { background: #474646; }
+/****************************************/
+
+/*----------------------------------------кінець заголовка-----------------------------------------------------------------*/
+
+/*----------------------------------------body+ads-----------------------------------------------------------------*/
+/******************anchor for title************************/
 .anchor2 {
     padding-top: 100px;
     margin-top: -100px;
@@ -39,7 +64,7 @@ body {
     background-clip: content-box;
     margin-bottom: -4px;
 }
-
+/*******************Table************************/
 th {
     font-size: 13px;
     font-weight: normal;
@@ -53,18 +78,20 @@ th {
 td {
     background: #cdcfcd;
     border-bottom: 1px solid #fff;
-    color: black;
+    color: #000000;
     border-top: 1px solid transparent;
-    padding: 15px;
-    padding-right: 200px;
+    padding: 15px 100px 15px 15px;
+    /*padding-right: 100px;*/
 }
 
 tr:hover td {
     background: #b7b6b6;
 }
+/***************************************************/
 
+/************************photo***************************/
 #p-photo>img {
-    width: 425px;
+    width: 400px;
 }
 
 img {
@@ -72,6 +99,15 @@ img {
     border-radius: 2%;
     margin: 0 auto;
 }
+
+.scale {
+    transition: 1s; /* Время эффекта */
+}
+
+.scale:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}
+/***************************************************/
 
 hr {
     height: 3px;
@@ -85,7 +121,6 @@ hr {
 /*}*/
 
 .hyperlink {
-
     text-decoration: none;
 }
 
@@ -93,9 +128,55 @@ a:hover {
     text-decoration: underline;
 }
 
+/*jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj*/
+#container {
+    width: 1250px; /* Ширина макета */
+    margin: 0 auto; /* Выравнивание по центру */
+
+}
+#nav {
+    margin-top: 150px;
+    width: 150px; /* Ширина левой колонки */
+    float: left;
+}
+
+.ads_text {
+    text-align: center;
+    /*margin-top: 10px;*/
+}
+
+#aside {
+    margin-top: 150px;
+    width: 150px; /* Ширина правой колонки */
+    float: right;
+}
+#content {
+    margin: 0 200px 0 200px; /* Отступ на ширину левой и правой колонки*/
+}
+.ads {
+    width:150px;
+}
+
+#nav>p, #aside>p {
+    margin-bottom: 0;
+    margin-top: 40px;
+}
+#nav>div, #aside>div {
+    text-align: center;
+}
+
+
+/*div>img {*/
+/*    text-align: center;*/
+/*    transition: 1s;*/
+/*}*/
+/*div>img:hover {*/
+/*    transform: scale(1.2);*/
+/*}*/
+
+/*......................................bottom.......................................*/
 .contacts {
     height: 20px;
     width: 20px;
 
 }
-
